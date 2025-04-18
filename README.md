@@ -32,7 +32,7 @@ I enjoy combining clean code with playful design elements like pastel colors and
 Let’s connect! 💬  
 [🌷 Instagram](https://www.instagram.com/ctrmdhn_)  
 [🌸 TikTok](https://www.tiktok.com/@cutarmidaadhanaa)  
-[🌼 My Portfolio](https://yourportfolio.link)
+[🌼 My Portfolio](https://cutarmidaadhana.github.io/web-portofolio/)
 
 ---
 
