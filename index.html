@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi Cutie</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    section {
+      border-bottom: 4px solid #e26d8e; /* Garis pink di bawah setiap section */
+    }
+
+    /* Menyesuaikan ukuran gambar pada perangkat kecil */
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Mengatur margin navbar di perangkat kecil */
+    .navbar-toggler {
+      border: none;
+    }
+
+    /* Responsivitas untuk gambar di home */
+    @media (max-width: 767px) {
+      .home__title {
+        font-size: 1.8rem; /* Menyesuaikan ukuran teks judul di perangkat kecil */
+      }
+
+      .home__description {
+        font-size: 1rem; /* Menyesuaikan ukuran teks deskripsi di perangkat kecil */
+      }
+
+      .home img {
+        max-width: 100%;
+      }
+
+      .popular__card {
+        margin-bottom: 20px;
+      }
+
+      .popular img {
+        max-height: 200px; /* Menyesuaikan tinggi gambar di perangkat kecil */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!--========== HEADER ==========-->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center" style="font-family: 'Poppins', sans-serif; font-size: 1.8rem; color: #e26d8e; font-weight: 700;">
+            Sushi Mida 🍣💗
+        </a>                
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" style="font-size: 1.2rem; font-weight: 500; font-family: 'Poppins', sans-serif;">
+              <li class="nav-item">
+                <a href="#home" class="nav-link" style="color: #e26d8e;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#popular" class="nav-link" style="color: #e26d8e;">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a href="#recently" class="nav-link" style="color: #e26d8e;">Recently</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--========== HOME ==========-->
+ <!-- Tambahkan scroll-margin untuk efek scroll yang lebih halus & tepat -->
+<section class="home section py-5" id="home" 
+style="background: linear-gradient(to right, #ffe4ec, #ffffff); min-height: 100vh; scroll-margin-top: 80px;">
+<div class="container h-100 d-flex justify-content-center align-items-center">
+  <div class="row align-items-center text-center text-md-start w-100">
+    
+    <!-- Gambar 1 -->
+    <div class="col-12 col-md-4 mb-4 d-flex justify-content-center" data-aos="fade-right" data-aos-duration="1500">
+      <img src="assets/img/home-sushi-rolls.png" alt="Sushi 1" class="img-fluid" />
+    </div>
+
+    <!-- Teks Tengah -->
+    <div class="col-12 col-md-4 mb-4 d-flex flex-column align-items-center align-items-md-start" 
+     data-aos="zoom-in" data-aos-duration="1500">
+  <h1 class="home__title fw-bold mb-3 text-center text-md-start" style="font-size: 2.5rem; font-family: 'Poppins', sans-serif;">
+    Taste the Magic of<br>
+    <span style="color: #e26d8e; font-family: 'Dancing Script', cursive; font-size: 3rem;">
+      Kawaii Sushi Love 🍣
+    </span>
+  </h1>              
+  <p class="home__description mb-4 text-center text-md-start" style="font-size: 1.1rem; color: #555; font-family: 'Lora', serif; font-weight: 600; line-height: 1.8;">
+    A table for two, soft music, and sushi that will brighten your day 🍥🌷<br>
+    Taste the joy in every little roll! 
+  </p>                   
+  <div class="d-flex justify-content-center w-100"> <!-- D-flex dengan w-100 memastikan tombol ada di tengah -->
+    <button class="btn btn-pink px-5 py-3" style="background-color: #e26d8e; color: white; border-radius: 30px; font-weight: bold; text-transform: uppercase;">
+      Order Now 🍣
+    </button>
+  </div>
+</div>
+    <!-- Gambar 2 -->
+    <div class="col-12 col-md-4 d-flex justify-content-center home-sushi-image" data-aos="fade-left" data-aos-duration="1500">
+      <img src="assets/img/recently-salmon-sushi.png" alt="Sushi 2" class="img-fluid" />
+    </div>
+
+  </div>
+</div>
+</section>
+
+
+  <!--========== POPULAR ==========-->
+  <section class="popular section py-5" id="popular" style="background: linear-gradient(to right, #fff0f5, #ffffff);">
+    <div class="container d-flex flex-column align-items-center text-center" style="padding-top: 80px;">
+      <h3 class="section__subtitle mb-3" style="color: #e26d8e; font-family: 'Dancing Script', cursive; font-size: 1.8rem;">
+        💕 Our Fave Picks!
+      </h3>
+      <h2 class="section__title mb-5" style="font-weight: 700; font-size: 2.5rem; color: #ff6f91; font-family: 'Poppins', sans-serif;">
+        ✨ Most Loved Dishes ✨
+      </h2>
+  
+      <div class="row justify-content-center w-100">
+        <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
+          <div class="popular__card text-center" style="max-width: 300px; margin-bottom: 20px;">
+            <img src="assets/img/popular-onigiri.png" alt="Onigiri" class="img-fluid mb-3" />
+            <h3 class="popular__name" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #e26d8e;">
+              🍙 Kawaii Onigiri
+            </h3>
+            <p class="popular__description" style="color: #888;">A lil’ rice hug 💕</p>
+            <span class="popular__price" style="font-weight: bold; color: #ff6f91;">$10.99</span>
+          </div>
+        </div>
+  
+        <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
+          <div class="popular__card text-center" style="max-width: 300px; margin-bottom: 20px;">
+            <img src="assets/img/popular-spring-rols.png" alt="Spring Rolls" class="img-fluid mb-3" />
+            <h3 class="popular__name" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #e26d8e;">
+              🥢 Sweet Spring Rolls
+            </h3>
+            <p class="popular__description" style="color: #888;">Crispy & cute inside~</p>
+            <span class="popular__price" style="font-weight: bold; color: #ff6f91;">$15.99</span>
+          </div>
+        </div>
+  
+        <div class="col-12 col-md-4 mb-4 d-flex justify-content-center">
+          <div class="popular__card text-center" style="max-width: 300px; margin-bottom: 20px;">
+            <img src="assets/img/popular-sushi-rolls.png" alt="Sushi Rolls" class="img-fluid mb-3" />
+            <h3 class="popular__name" style="font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #e26d8e;">
+              🍥 Lovely Sushi Rolls
+            </h3>
+            <p class="popular__description" style="color: #888;">So pretty, so tasty 💗</p>
+            <span class="popular__price" style="font-weight: bold; color: #ff6f91;">$19.99</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!--========== RECENTLY ==========-->
+  <section class="recently section d-flex align-items-center" id="recently" style="padding-top: 120px; min-height: 100vh;">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Teks di kiri -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="text-start" style="padding-left: 0.5rem;">
+            <h3 class="section__subtitle mb-2" style="color: #e26d8e; font-size: 1.5rem;">
+              Fresh From the Kitchen 💕
+            </h3>
+            <h2 class="section__title mb-3" style="font-size: 2.5rem; font-weight: 600; color: #333;">
+              Sushi Samurai <br> with Creamy Salmon 🍣
+            </h2>
+            <p class="recently__description mb-4" style="font-size: 1.1rem; color: #555; line-height: 1.8;">
+              Nikmati menu terbaru kami yang dibuat dengan penuh cinta. <br>
+              Perpaduan rasa lembut dan gurih siap memanjakan harimu!
+            </p>
+          </div>
+        </div>
+  
+        <!-- Gambar di kanan -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="assets/img/recently-salmon-sushi.png" alt="Recently Added Sushi" class="img-fluid" style="max-width: 80%; height: auto;"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section" style="background-color: #e26d8e; padding: 20px 0;">
+    <div class="footer__container container">
+      <div class="row">
+        <div class="col-md-4">
+            <div class="footer__content">
+              <h4 class="footer__title" style="font-size: 1.2rem; color: #ffffff; font-weight: 600;">Follow Us</h4>
+              <div class="footer__social-media">
+                <a href="https://www.instagram.com/ctrmdhn_" target="_blank" style="color: #f8f8f8; margin-right: 15px;">
+                  <i class="fab fa-instagram" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://www.facebook.com/Cut Armida Adhana" target="_blank" style="color: #f8f8f8; margin-right: 15px;">
+                  <i class="fab fa-facebook" style="font-size: 1.5rem;"></i>
+                </a>
+                <a href="https://www.tiktok.com/@cutarmidaadhanaa" target="_blank" style="color: #f8f8f8;">
+                  <i class="fab fa-tiktok" style="font-size: 1.5rem;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+        <div class="col-md-4 text-center">
+          <div class="footer__cards">
+            <img src="assets/img/footer-card-1.png" alt="Footer Card 1" class="footer__card img-fluid" style="max-width: 90px; margin-right: 10px;"/>
+            <img src="assets/img/footer-card-2.png" alt="Footer Card 2" class="footer__card img-fluid" style="max-width: 90px; margin-right: 10px;"/>
+            <img src="assets/img/footer-card-3.png" alt="Footer Card 3" class="footer__card img-fluid" style="max-width: 90px; margin-right: 10px;"/>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="footer__content">
+            <h4 class="footer__title" style="font-size: 1.2rem; color: #ffffff; font-weight: 600;">Contact Us</h4>
+            <p class="footer__link" style="color: #f8f8f8; margin-bottom: 2px;">cutarmidaadhana19@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    window.addEventListener('resize', function() {
+      var imageElement = document.querySelector('.home-sushi-image');
+      if (window.innerWidth < 768) {
+        imageElement.style.display = 'none';
+      } else {
+        imageElement.style.display = 'flex'; // atau 'block', tergantung layout asli
+      }
+    });
+  
+    // Menjalankan sekali saat halaman dimuat untuk pertama kali
+    window.dispatchEvent(new Event('resize'));
+  </script>
+  
+</body>
+</html>
