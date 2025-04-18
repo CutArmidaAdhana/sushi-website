@@ -1,6 +1,3 @@
-kok gak muncul gambar preiew websitenya # 🌸 Sushi Cutie 🍣  
-### by Cut Armida Adhana 💗
-
 Hi there~! Welcome to my **Sushi Website Project** ✨  
 This is a cute and responsive landing page made with lots of 💕 love and attention to kawaii design! 🌷
 
